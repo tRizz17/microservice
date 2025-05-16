@@ -1,4 +1,5 @@
-const streamingServices = {
+
+export const streamingServices = {
     "Netflix": 15.49,          // Standard plan
     "Hulu": 7.99,              // With ads
     "Hulu (No Ads)": 17.99,
@@ -16,5 +17,3 @@ const streamingServices = {
     "Crunchyroll": 7.99,       // Fan plan
     "Showtime": 10.99
   };
-
-  module.exports = streamingServices
