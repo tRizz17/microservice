@@ -46,6 +46,8 @@ comparePrices();
 
 ## Example Response
 
+The test program receives the data by calling await json.response(), and logs the returned JSON which includes the name of the cheaper streaming service and its price
+
 { cheaperService: "Hulu", price: 7.99 }
 
 
