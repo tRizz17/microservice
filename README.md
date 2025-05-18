@@ -30,4 +30,4 @@ Parameters:
 
 ## UML Diagram
 
-![UML Diagram](./UML.png)
+![UML Diagram](./image.png)
