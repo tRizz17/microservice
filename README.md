@@ -6,13 +6,13 @@ The database is included in the microservice (data.js)
 
 ## Setup Instructions
 
-1. If node is not installed on machine, install it
-2. If express is not installed on machine, install it
-3. Run 'npm install' in the microservice directory
+1. Make sure Node.js is installed on your machine
+2. In the project directory, run: 'npm install' 
+    - This installs express, cors and other dependencies
 
 ## Running the Program
 
-1. Run 'npm start' - express server will now be running on port 3000
+1. Run 'npm start' - express server will now be running on port 3000 by default
 
 Optional: Change port # in app.js (Currently set to port 3000)
 
@@ -21,12 +21,16 @@ Optional: Change port # in app.js (Currently set to port 3000)
 GET /compareTwo
 
 Parameters: 
-1. Name of streaming service1
-2. Name of streaming service2
+1. service1 --> Name of first streaming service
+2. service2 --> Name of second streaming service
 
 ## Sample JSON response
 
 { cheapestService: "Hulu", Price: 7.99 }
+
+## Example Request
+
+<pre><code>### 💻 Example Client Request (Using Node.js) ```js // callComparer.js import fetch from 'node-fetch'; // Only needed if using Node < 18 const comparePrices = async () => { const params = new URLSearchParams({ service1: 'Netflix', service2: 'Amazon Prime Video' }); const response = await fetch(`http://localhost:3000/compareTwo?${params}`); const data = await response.json(); console.log(data); }; comparePrices(); ``` ### 📥 Expected Console Output ```json { "cheaperService": "Amazon Prime Video", "price": 8.99 } ``` </code></pre>
 
 ## UML Diagram
 
