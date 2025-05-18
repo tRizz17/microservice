@@ -46,7 +46,7 @@ comparePrices();
 
 ## Example Response
 
-{ cheapestService: "Hulu", Price: 7.99 }
+{ cheaperService: "Hulu", price: 7.99 }
 
 
 ## UML Diagram
