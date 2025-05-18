@@ -24,10 +24,6 @@ Parameters:
 1. service1 --> Name of first streaming service
 2. service2 --> Name of second streaming service
 
-## Sample JSON response
-
-{ cheapestService: "Hulu", Price: 7.99 }
-
 ## Example Request
 
 ```js
@@ -47,6 +43,11 @@ const comparePrices = async () => {
 };
 
 comparePrices();
+
+## Example Response
+
+{ cheapestService: "Hulu", Price: 7.99 }
+
 
 ## UML Diagram
 
