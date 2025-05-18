@@ -27,9 +27,8 @@ Parameters:
 ## Example Request
 
 ```js
-// callComparer.js
 
-import fetch from 'node-fetch'; // Only needed if using Node < 18
+import fetch from 'node-fetch';
 
 const comparePrices = async () => {
   const params = new URLSearchParams({
