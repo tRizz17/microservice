@@ -43,6 +43,7 @@ const comparePrices = async () => {
 };
 
 comparePrices();
+```
 
 ## Example Response
 
