@@ -30,7 +30,23 @@ Parameters:
 
 ## Example Request
 
-<pre><code>### 💻 Example Client Request (Using Node.js) ```js // callComparer.js import fetch from 'node-fetch'; // Only needed if using Node < 18 const comparePrices = async () => { const params = new URLSearchParams({ service1: 'Netflix', service2: 'Amazon Prime Video' }); const response = await fetch(`http://localhost:3000/compareTwo?${params}`); const data = await response.json(); console.log(data); }; comparePrices(); ``` ### 📥 Expected Console Output ```json { "cheaperService": "Amazon Prime Video", "price": 8.99 } ``` </code></pre>
+```js
+// callComparer.js
+
+import fetch from 'node-fetch'; // Only needed if using Node < 18
+
+const comparePrices = async () => {
+  const params = new URLSearchParams({
+    service1: 'Netflix',
+    service2: 'Amazon Prime Video'
+  });
+
+  const response = await fetch(`http://localhost:3000/compareTwo?${params}`);
+  const data = await response.json();
+  console.log(data);
+};
+
+comparePrices();
 
 ## UML Diagram
 
